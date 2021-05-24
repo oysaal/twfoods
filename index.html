@@ -223,7 +223,7 @@ font-size: 20px;
 color: white;
 }
 
-.form-horizontal{
+form{
   margin:0px 100px;
 }
 input{
@@ -474,7 +474,7 @@ hr{
   text-align: center;
   background-color: grey;
 }
-.form-horizontal{
+form{
   margin: 10% 20%;
 }
 input{
@@ -498,14 +498,14 @@ textarea{
   height: 200px;
   border-radius: 9px;
 }
-#bigbutton{
+.hero-btn{
   width: 25%;
   margin: 10%;
   padding-bottom: 30px;
   border: 1px solid black;
 
 }
-#bigbutton:hover{
+.hero-btn:hover{
   background-color: white;
 
 }
@@ -555,12 +555,12 @@ footer{
 <body>
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="home" onclick="closeNav()">Home</a>
-    <a href="about" onclick="closeNav()">About</a>
-    <a href="menu" onclick="closeNav()">Menu</a>
-    <a href="products" onclick="closeNav()">Products</a>
-    <a href="cook@home" onclick="closeNav()">Cook@Home</a>
-    <a href="contact" onclick="closeNav()">Contact</a>
+    <a href="#" onclick="closeNav()">Home</a>
+    <a href="#About" onclick="closeNav()">About</a>
+    <a href="#q" onclick="closeNav()">Menu</a>
+    <a href="#e" onclick="closeNav()">Products</a>
+    <a href="#w" onclick="closeNav()">Cook@Home</a>
+    <a href="#r" onclick="closeNav()">Contact</a>
   </div>
 
   <div id="main">
@@ -573,12 +573,12 @@ footer{
   <header>
 
     <nav>
-      <p><a href="home" class="navlink">Home</a></p>
-      <p><a href="about" class="navlink">About</a></p>
-      <p><a href="menu" class="navlink">Menu</a></p>
-      <p><a href="cook@home" class="navlink">Cook@Home</a></p>
-      <p><a href="products" class="navlink">Products</a></p>
-      <p><a href="contact" class="navlink">Contact</a></p>
+      <p><a href="#" class="navlink">Home</a></p>
+      <p><a href="#About" class="navlink">About</a></p>
+      <p><a href="#q" class="navlink">Menu</a></p>
+      <p><a href="#w" class="navlink">Cook@Home</a></p>
+      <p><a href="#e" class="navlink">Products</a></p>
+      <p><a href="#r" class="navlink">Contact</a></p>
 	    
 
 		    
@@ -611,9 +611,9 @@ footer{
         </div>
           <h4>Follow us on social media </h4>
           <div class"icons"> 
-		    <i class="fab fa-facebook"></i>
-		    <i class="fab fa-instagram"></i>
-		    <i class="fab fa-twitter-square"></i>
+		    <p><a target="_blank"href="https://www.facebook.com/TakiesThai/" class="navlink icon"><i class="fab fa-facebook"></i></a></p>
+      	            <p><a target="_blank"href="http://www.instagram.com/twfoods_takies" class="navlink icon" ><i class="fab fa-instagram"></i></a></p>
+     		    <p><a target="_blank" href="https://twitter.com/twfood_takies" class="navlink icon" ><i class="fab fa-twitter-square"></i></a></p>
 	    </div>
       </div>
     </div>
@@ -697,39 +697,16 @@ footer{
   <hr id="r">
   <div id="Contact" >
     <h5>Contact</h5>
-    <form class="form-horizontal">
+   
+	<form action="form-handler.php"method="post">
+          <input type="text" name="name" placeholder="Enter Full Name"required>
+          <input type="email" name="email" placeholder="Enter Email Address"required>
+          <input type="text" name="subject" placeholder="Subject"required>
+          <textarea rows="8" name="message" placeholder="Message"required></textarea>
+          <button type="Submit" class="hero-btn red-btn">Send Message</button>
 
+        </form>
 
-
-
-<!-- Text input-->
-<div class="form-group">
-
-  <div class="col-md-6">
-  <input id="textinput" name="textinput" type="text" placeholder="Name" class="form-control input-md" required="">
-
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-
-  <div class="col-md-6">
-  <input id="textinput" name="textinput" type="text" placeholder="Email" class="form-control input-md">
-
-  </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-
-    <textarea class="form-control" id="Message" name="Message">Message</textarea>
-
-</div>
-
-
-<input type="submit" id="bigbutton"></input>
-</form>
 
 
   </div>
@@ -738,6 +715,36 @@ footer{
 	
 	
   <br><br>
+	
+	
+	
+	<?php
+		$name = $_POST['name'];
+		$visitor_email = $_POST['email'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+
+		$email_from = 'ordertakies@gmail.com';
+
+		$email_subject = 'New Form Submission From TW Foods';
+
+		$email_body = "User Name: $name.\n".
+              "User Email: $visitor_email.\n".
+              "Subject: $subject.\n".
+              "User Message: $message.\n";
+
+		$to = 'ordertakies@gmail.com';
+
+		$headers = "from: $email_from \r\n";
+
+		$headers .= "Reply-to: $visitor_email \r\n";
+
+
+		mail($to,$email_subject,$email_body,$headers);
+
+		header("Location: contact.html,adventure.html,customboatbuild.html");
+
+?>
 
 
 
