@@ -1,684 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TW Foods - Authentic Thai Dishes and Buffalo Wings</title>
-	<link rel="icon" 
-     		 type="image/png" 
-    	 	 href="https://i.ibb.co/drtWwnb/20210225-120518.jpg">
-  <style>
-	  
-	  
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
+  <link rel="icon"
+     		 type="image/png"
+    	 	 href="logo-transparent.png">
+  <title>TW Foods - Authentic Thai Dishes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/d841b1ad01.js" crossorigin="anonymous"></script>
 
-/* Hide scrollbar for IE, Edge and Firefox */
-body{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  font-family: 'Poppins', sans-serif !important;
-}
-
-
-
-
-
-
-
-/* #### Mobile Phones Portrait #### */
-@media screen and (max-device-width: 900px) {
-  /* The sidebar menu */
-#mySidebar{
-z-index: 300;
-}
-.sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0.9); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The sidebar links */
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 60px;
-  color: red;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: black;
-  background-color: ;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 100px;
-  margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-  font-size: 60px;
-  cursor: pointer;
-  background-color: transparent;
-  color: red;
-  padding: 15px 20px;
-  border: none;
-  position: fixed;
-  right: 5px;
-}
-
-.openbtn:hover {
-  color: black;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-
-nav{
-  display: none;
-
-}
-	
-.class .fab{
-	color: #f44336;
-	margin: 0 13px:
-	cursor: pointer;
-	padding: 18px 0;
-	}
-	
-
-body{
-  background-color:#e6e6e6 ;
-  margin: 0px 0px;
-  overflow-x: hidden;
-  text-align: center;
-}
-header{
-  z-index: 90;
-  background-color: transparent;
-  display:inline-block;
-  flex-direction: row;
-  width: 100vh;
-  font-family: 'Poppins', sans-serif;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  margin-top: -80px;
-}
-#banner{
-  margin-top: 100px ;
-  width: 100vw;
-  height: 45vh;
-  background-image: url('https://i.ibb.co/RDfSD6X/fried-rice-3023040-960-720.webp');
-  background-size: cover;
-  background-position: center;
-  padding: 20% 0px;
-  box-sizing:border-box;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-}
-#logobox{
-  width: 20%;
-  margin-left: ;
-  position: fixed;
-  margin-top: -50px;
-
-
-}
-h2{
-  font-size: 50px;
-  color: red;
-  text-shadow: 0px 0px 10px black;
-  text-align: center;
-}
-h4{
-  text-align: center;
-  z-index: 10;
-  font-size: 30px;
-  font-weight: 300;
-}
-h5{
-  font-size: 90px;
-  text-align: center;
-}
-.bigtitle{
-  margin-top: 10%;
-  font-size: 90px !important;
-}
-.subtitle{
-  color: black;
-  font-size: 55px !important;
-  text-shadow: 0px 0px 10px white;
-}
-.vr{
-  border-radius: 50% !important;
-  padding: 0px 30px;
-  width: 30%;
-}
-.w{
-  margin: 0px 20px;
-  width: 40%;
-  height: 40%;
-  border-radius: 50%;
-
-}
-#smh{
-  display: flex;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
-}
-.parent1 {
-box-sizing: border-box;
-padding: 20px;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 40px;
-grid-row-gap: 40px;
-margin: -50px 100px;
-margin-bottom: -500px;
-}
-
-.menuItem{
-  border: 0.2px solid black;
-  border-radius: 10px;
-  height: 500px;
-  background-image:url("https://i.ibb.co/NFMnGKP/Thai-food.jpg");
-  background-size: cover;
-}
-.shade{
-  margin-top: -20px;
-  height: 100%;
-  width: 100%;
-font-size: 20px;
-color: white;
-}
-
-form{
-  margin:0px 100px;
-}
-input{
-  margin: 20px 0px;
-  width: 100%;
-  height: 70px;
-  font-size: 50px;
-  border-radius: 9px;
-  border: 0.5px black solid;
-  padding: 10px;
-}
-form{
-  text-align: center;
-  margin-top: -30px;
-  border: none;
-
-}
-textarea{
-  margin: 0px;
-  width: 102%;
-  height: 700px;
-  border-radius: 9px;
-}
-footer{
-  text-align: center;
-  width: 100vw;
-  height: 50px;
-  background-color: black;
-  color: white;
-}
-.seccc{
-  min-height: 100vh;
-  padding: 30vh 0vh;
-}
-
-}
-
-
-
-
-
-
-
-
-/* #### Laptop screen #### */
-@media screen and (min-device-width: 900px){
-
-.bigtitle{
-  color: red;
-  text-shadow: 0px 0px 5px black;
-    margin-top: 0px;
-    font-size: 5vw;
-  }
-.subtitle{
-    color: black;
-    font-size: 2vw;
-}
-p{
-  font-size: 1.5vw;
-}
-
-.sidebar{
-  display: none;
-}
-#main{
-  display: none;
-}
-body{
-  background-color:#e6e6e6 ;
-  margin: 0px 0px;
-  overflow-x: hidden;
-  font-family: 'Source Sans Pro', sans-serif;
-  box-sizing: border-box;
-}
-header{
-  padding: -5px 0px;
-  z-index: 90;
-  background-color: black;
-  display:inline-block;
-  flex-direction: row;
-  width: 100vw;
-  font-family: 'Source Sans Pro', sans-serif;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-
-}
-nav{
-  max-width: 70%;
-  padding-top: ;
-  padding-bottom: -20px;
-  display: flex;
-  flex-direction: row;
-  float: right;
-  text-align: right;
-  padding-right: 5%;
-  box-sizing: border-box;
-  right: 0;
-}
-.navlink{
-  font-size: 1vw;
-  padding: 0px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: red;
-  font-family: 'Poppins', sans-serif;
-}
-.navlink:hover{
-  color: white;
-  text-decoration: underline;
-}
-
-#logobox{
-  position: fixed;
-  width: 9vw;
-  z-index: 9999;
-  padding: 0px 50px;
-
-}
-#banner{
-  width: 100vw;
-  height: 100vh;
-  background-image: url('https://i.ibb.co/RDfSD6X/fried-rice-3023040-960-720.webp');
-  background-size: cover;
-  padding: 190px 20%;
-  box-sizing:border-box;
-  text-align: center;
-}
-h2{
-  font-size: 10vw;
-}
-
-.parent {
-display: flex;
-box-sizing: border-box;
-width: 90vw;
-}
-
-.div1 {
-  background-color: ;
-  width: 50%;
-  padding: 10% 5% 5% 5%;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
- }
-.div2 {
-  background-color: ;
-  width: 50%;
-  padding: 5% 5%;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-}
-h4{
-  font-size: 1.5vw;
-  text-align: center;
-  z-index: 10;
-  font-weight: 300;
-
-}
-#rushvuba{
-  text-align: center;
-}
-.vr{
-  border-radius: 50% !important;
-  padding: 0px 30px;
-  width: 20%;
-}
-h5{
-  font-size: 3vw;
-  text-align: center;
-
-}
-#smh{
-margin-top: -40px;
-display: inline-flex;
-
-
-}
-.w{
-  margin: 20px;
-  border-radius: 50%;
-  width: 20px;
-  height: auto;
-}
-
-.parent1 {
-box-sizing: border-box;
-padding: 20px;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 40px;
-grid-row-gap: 40px;
-margin: -50px 200px;
-margin-bottom: -500px;
-}
-.menuItem{
-  border: 0.2px solid black;
-  border-radius: 5px;
-  height: 200px;
-  background-image:url("https://i.ibb.co/NFMnGKP/Thai-food.jpg");
-  background-size: cover;
-}
-.shade{
-  background-color: rgb(0,0,0,);
-  margin-top: -20px;
-  height: 100%;
-  width: 100%;
-opacity: 0.3;
-font-size: 20px;
-color: white;
-}
-.shade:hover{
-
-  opacity: 1;
-
-}
-
-.div11 { grid-area: 1 / 1 / 2 / 2; }
-.div21 { grid-area: 1 / 2 / 2 / 3; }
-.div31 { grid-area: 1 / 3 / 2 / 4; }
-.div41 { grid-area: 2 / 1 / 3 / 2; }
-.div51 { grid-area: 2 / 2 / 3 / 3; }
-.div61 { grid-area: 2 / 3 / 3 / 4; }
-.div71 { grid-area: 3 / 1 / 4 / 2; }
-.div81 { grid-area: 3 / 2 / 4 / 3; }
-.div91 { grid-area: 3 / 3 / 4 / 4; }
-
-.div101 { grid-area: 4 / 1 / 5 / 2; }
-.div111 { grid-area: 4 / 2 / 5 / 3; }
-.div121 { grid-area: 4 / 3 / 5 / 4; }
-.div131 { grid-area: 5 / 1 / 6 / 2; }
-.div141 { grid-area: 5 / 2 / 6 / 3; }
-.div151 { grid-area: 5 / 3 / 6 / 4; }
-
-#told{
-  border: 0.5px, black, solid;
-  padding: 50px;
-  border-radius: 20px;
-}
-hr{
-  width:55%;
-  text-align: center;
-  background-color: grey;
-}
-form{
-  margin: 10% 20%;
-}
-input{
-  margin: 20px 0px;
-  width: 100%;
-  height: 30px;
-  font-size: 20px;
-  border-radius: 9px;
-  border: 0.5px black solid;
-  padding: 10px;
-}
-form{
-  text-align: center;
-  margin-top: -30px;
-  border: none;
-
-}
-textarea{
-  margin: 0px;
-  width: 102%;
-  height: 200px;
-  border-radius: 9px;
-}
-.hero-btn{
-  width: 25%;
-  margin: 10%;
-  padding-bottom: 30px;
-  border: 1px solid black;
-
-}
-.hero-btn:hover{
-  background-color: white;
-
-}
-footer{
-  text-align: center;
-  width: 100vw;
-  height: 50px;
-  background-color: black;
-  color: white;
-}
-}
-
-	  
-	  
-	  
-	  
-	  
-  </style>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> <!--font-family: 'Source Sans Pro', sans-serif;-->
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <!--font-family: 'Poppins', sans-serif;-->
-
-  <script>
-    /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "100%";
-      document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-}
-
-
-</script>
-	
-	<script src="https://kit.fontawesome.com/d841b1ad01.js" crossorigin="anonymous"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> <!--font-family: 'Poppins', sans-serif;-->
 
 </head>
 <body>
-  <div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#" onclick="closeNav()">Home</a>
-    <a href="#About" onclick="closeNav()">About</a>
-    <a href="#q" onclick="closeNav()">Menu</a>
-    <a href="#e" onclick="closeNav()">Products</a>
-    <a href="#w" onclick="closeNav()">Cook@Home</a>
-    <a href="#r" onclick="closeNav()">Contact</a>
-  </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" onclick="closeNav()">Home</a>
+      <a href="#About" onclick="closeNav()">About</a>
+      <a href="#Menu" onclick="closeNav()">Menu</a>
+      <a href="#Products" onclick="closeNav()">Products</a>
+      <a href="#Cook-at-Home" onclick="closeNav()">Cook@Home</a>
+      <a href="#Contact-Us" onclick="closeNav()">Contact</a>
+    </div>
 
-  <div id="main">
-    <button class="openbtn" onclick="openNav()">&#9776; </button>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; </button>
 
-  </div>
+    </div>
 
 
-  <a href="#"><img src="https://i.ibb.co/D83TV3g/logo.png"  id="logobox"/></a>
-  <header>
+    <a href="#"><img src="logo-transparent.png"  id="logo"/></a>
 
-    <nav>
-      <p><a href="#" class="navlink">Home</a></p>
-      <p><a href="#About" class="navlink">About</a></p>
-      <p><a href="#q" class="navlink">Menu</a></p>
-      <p><a href="#w" class="navlink">Cook@Home</a></p>
-      <p><a href="#e" class="navlink">Products</a></p>
-      <p><a href="#r" class="navlink">Contact</a></p>
-	    
-
-		    
+    <header id="top">
+      <nav>
+        <p><a href="#" class="navlink">Home</a></p>
+        <p><a href="#About" class="navlink">About</a></p>
+        <p><a href="#Menu" class="navlink">Menu</a></p>
+        <p><a href="#Cook-at-Home" class="navlink">Cook@Home</a></p>
+        <p><a href="#Products" class="navlink">Products</a></p>
+        <p><a href="#Contact-Us" class="navlink">Contact</a></p>
 
       <p><a target="_blank"href="https://www.facebook.com/TakiesThai/" class="navlink icon"><i class="fab fa-facebook"></i></a></p>
       <p><a target="_blank"href="http://www.instagram.com/twfoods_takies" class="navlink icon" ><i class="fab fa-instagram"></i></a></p>
       <p><a target="_blank" href="https://twitter.com/twfood_takies" class="navlink icon" ><i class="fab fa-twitter-square"></i></a></p>
     </nav>
-
   </header>
+
   <div id="banner">
     <h2 class="bigtitle">Authentic Thai Food<br>& Buffalo Wings</h2>
     <h3 class="subtitle">Kigali</h3>
-	  <h2 class="subtitle">FREE DELIVERY on all orders<br>over RWF10,000.00</h2>
-	  
-  </div>
+	  <h3 class="subtitle freedelivery">FREE DELIVERY on all orders over RWF10,000.00</h3>
 
-  <div id="About">
+  </div>
+  <p id="About"></p>
+
+  <div id="About_">
     <div class="parent">
       <div class="div1">
-        <h5 id="tl">ABOUT</h5>
+        <h5 id="about-header">ABOUT</h5>
       </div>
       <div class="div2">
         <h4>
           TW Foods is a cloud restaurant operating in Kigali. We offer Authentic Thai Cusine and Side dishes.<br>You can order directly from us on phone or through Vuba Vuba or Rush Food. Note that placing orders directly from us gives you over 30% discount from those two platforms.
         </h4>
         <div id="rushvuba">
-          <img src="https://i.ibb.co/4R3Xyr7/Rush-Foods.png" alt="Rush-Foods" border="0" width="80px" class="vr">
-          <img src="https://i.ibb.co/jgV9mBr/Vuba-Vuba.jpg" alt="Vuba-Vuba" border="0" width="80px" class="vr">
+          <img src="Rush.png" alt="Rush-Foods" border="0" width="80px" class="vr">
+          <img src="Vuba.jpg" alt="Vuba-Vuba" border="0" width="80px" class="vr">
         </div>
           <h4>Follow us on social media </h4>
-          <div class"icons"> 
+          <div class="icons">
 		    <p><a target="_blank"href="https://www.facebook.com/TakiesThai/" class="navlink icon"><i class="fab fa-facebook"></i></a></p>
       	            <p><a target="_blank"href="http://www.instagram.com/twfoods_takies" class="navlink icon" ><i class="fab fa-instagram"></i></a></p>
      		    <p><a target="_blank" href="https://twitter.com/twfood_takies" class="navlink icon" ><i class="fab fa-twitter-square"></i></a></p>
-	    </div>
+	        </div>
       </div>
     </div>
+</div>
 
-  </div>
   <br>
   <br>
   <br>
-	
-	
-	
-	
+
+
+
+
 	<section>
-  <hr id="q">
-  <div id="Menu" class="seccc">
+  <hr id="Menu">
+  <div id="Menu_" class="seccc">
     <h5>MENU</h5>
-    <!--
-    <div class="parent1">
-      <div class="div11 menuItem"><div class="shade"><h4>Food Item</h4></div> </div>
-      <div class="div21 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div31 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div41 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div51 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div61 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div71 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div81 menuItem"><div class="shade"><h4>Food Item</h4></div></div>
-      <div class="div91 menuItem"> </div>
-      <div class="div101 menuItem"> </div>
-      <div class="div111 menuItem"> </div>
-      <div class="div121 menuItem"> </div>
-      <div class="div131 menuItem"> </div>
-      <div class="div141 menuItem"> </div>
-      <div class="div151 menuItem"> </div>
 
-    </div>
-  -->
     <h4 id="told">Menu coming soon!</h4>
   </div>
 	</section>
   <br>
   <br>
-	
-	
-	
-	
-	
-	
-	
-	<section>
-  <hr id="w">
+
+
+<section>
+  <hr id="Cook-at-Home">
   <div id="Cook@Home" class="seccc">
     <h5>Cook@Home</h5>
     <h4>Cook at Home services coming soon!</h4>
   </div>
-	</section>
+</section>
   <br>
   <br>
   <br>
-	
-	
-	
-	
-	
+
+
+
+
+
 	<section>
-  <hr id="e">
+  <hr id="Products">
   <div id="Product" class="seccc">
     <h5>Products</h5>
     <h4>Products coming soon!</h4>
@@ -687,19 +123,19 @@ footer{
     <br>
   </div>
 	</section>
-	
-	
-	
-	
-	
-	
-<section>	
-  <hr id="r">
+
+
+
+
+
+
+<section>
+  <hr id="Contact-Us">
   <div id="Contact" >
     <h5>Contact</h5>
-   
+
 	<form action="form-handler.php"method="post">
-          <input type="text" name="name" placeholder="Enter Full Name"required>
+          <input type="text"  name="name" placeholder="Enter Full Name"required>
           <input type="email" name="email" placeholder="Enter Email Address"required>
           <input type="text" name="subject" placeholder="Subject"required>
           <textarea rows="8" name="message" placeholder="Message"required></textarea>
@@ -711,49 +147,9 @@ footer{
 
   </div>
 	</section>
-	
-	
-	
-  <br><br>
-	
-	
-	
-	<?php
-		$name = $_POST['name'];
-		$visitor_email = $_POST['email'];
-		$subject = $_POST['subject'];
-		$message = $_POST['message'];
-
-		$email_from = 'ordertakies@gmail.com';
-
-		$email_subject = 'New Form Submission From TW Foods';
-
-		$email_body = "User Name: $name.\n".
-              "User Email: $visitor_email.\n".
-              "Subject: $subject.\n".
-              "User Message: $message.\n";
-
-		$to = 'ordertakies@gmail.com';
-
-		$headers = "from: $email_from \r\n";
-
-		$headers .= "Reply-to: $visitor_email \r\n";
 
 
-		mail($to,$email_subject,$email_body,$headers);
-
-		header("Location: contact.html,adventure.html,customboatbuild.html");
-
-?>
-
-
-
-
-
-  <footer>
-    Copyright &copy2021 TW Foods. All rights reserved.
-  </footer>
 
 
 </body>
-</html
+</html>
