@@ -155,7 +155,7 @@ nav{
 
 #banner{
   margin:-10px;
-  background-image: url('images/banner-img.jpg');
+  background-image: url('banner-img.jpg');
   background-size: cover;
   background-position: top;
   box-sizing:border-box;
