@@ -210,8 +210,23 @@ section{
   font-size: 20px;
 }
 
-@media screen and (max-device-width: 900px) {
 
+
+
+.smicn{
+  font-size: 3vw;
+}
+.vr{
+  border-radius: 50%;
+  width: 50px;
+  padding: 10px;
+}
+
+
+@media screen and (max-device-width: 900px) {
+ .smicn{
+    font-size: 50px;
+  }
 
 nav{
    display: none;
