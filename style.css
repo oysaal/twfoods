@@ -287,10 +287,9 @@ textarea{
 }
 footer{
   text-align: center;
-  width: 100vw;
-  height: 50px;
-  background-color: black;
-  color: white;
+  font-size: 20px;
+  padding: 20px;
+  color: black;
 }
 
 
